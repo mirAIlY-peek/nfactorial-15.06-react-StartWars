@@ -11,6 +11,7 @@ import { ItemLists } from "../sw-item-lists";
 export const Content = ({ handleCreateFan }) => {
   const [selector, setSelector] = useState("Characters");
 
+
   const handleSelectorChange = (event) => {
     setSelector(event.target.value);
   };
@@ -43,6 +44,15 @@ export const Content = ({ handleCreateFan }) => {
             <ItemSpisok>Orbital Period: {planet.orbital_period}</ItemSpisok>
           </ItemLists>
         ))}
+
+        {selector === "Starships" &&
+            swStarships.map((starships) => (
+                <ItemLists key={starships.name} item={starships} type="planets">
+                    <ItemSpisok>Rotation Period: {starships.model}</ItemSpisok>
+                    <ItemSpisok>Orbital Period: {starships.manufacturer}</ItemSpisok>
+                </ItemLists>
+            ))}
+
     </div>
   );
 };

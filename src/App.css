@@ -4,7 +4,9 @@
   --main-font-family: DIN, Helvetica, Arial, sans-serif;
 }
 
-
+*{
+  font-family: 'Anton', sans-serif;
+}
 header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -113,4 +115,38 @@ hr {
 .favorite-button:active{
   background-color: rgb(37, 33, 81);
   transform: translateY(4px);
+}
+.footer{
+  background: rgb(50, 43, 122);
+  width: 100%;
+  height: 100%;
+}
+
+.ppp{
+  text-align: center;
+  font-size: 30px;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+  text-align: center;
+}
+p{
+  color: aliceblue;
+  text-align: center;
+}
+.foterIn{
+  padding: 30px;
+  text-align: center;
+  margin: 10px;
+}
+
+.mmmm{
+  width: 130px;
+  height: 20px;
+}
+.but{
+
+  margin-top: -17px;
+  padding: 0 0 0 30px;
 }
